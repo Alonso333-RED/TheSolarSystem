@@ -1,0 +1,114 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 90px 60px 40px;
+    box-sizing: border-box;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.hero-content {
+max-width: 600px;
+}
+
+.hero-content h1:hover {
+    text-shadow:
+        0 0 5px var(--text-color),
+        0 0 10px var(--text-color),
+        0 0 20px var(--text-color);
+
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    margin: 0 0 30px;
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.hero-planet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-planet img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.hero-planet span {
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+.hero-planet:hover {
+    filter: drop-shadow(0 0 20px var(--planet-color));
+}
+
+@media (max-width: 900px) {
+.hero {
+    gap: 40px;
+    padding: 100px 30px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero-planet img {
+    width: 280px;
+    height: 280px;
+}
+
+}
+
+@media (max-width: 600px) {
+.hero {
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 20px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.hero-planet img {
+    width: 220px;
+    height: 220px;
+}
+
+}
